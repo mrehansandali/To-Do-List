@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 1%;
+            padding: 0;
+        }
+        body{
+            font-size: 4vw;
+            background-color: lightgrey;
+            text-align: center;
+        }
+        .delBtn{
+            font-size: 2vw;
+            background-color: rgb(241, 71, 71);
+            padding: 1%;
+            margin: 1% 5%;
+            border: none;
+            border-radius: 20px;
+        }
+        .editBtn {
+            font-size: 2vw;
+            background-color: blue;
+            padding: 1%;
+            color: white;
+            border: none;
+            border-radius: 20px;
+        }
+        .deleteAllBtn{
+            font-size: 2vw;
+            background-color: red;
+            padding: 1%;
+            border: none;
+            border-radius: 20px;
+        }
+        .addItem{
+            font-size: 2vw;
+            background-color: yellow;
+            padding: 1%;
+            border: none;
+            border-radius: 20px;
+        }
+        #todo-item{
+            width: 30vw;
+            height: 5vw;
+            font-size: 3vw;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <input type="text" id="todo-item" placeholder="Enter Your Item">
+        <button class="addItem" onclick="addItem()">ADD ITEM</button>
+    </div>
+    <div>
+        <ol id="list">
+
+        </ol>
+    </div>
+    <div>
+        <button class="deleteAllBtn" onclick="deleteAll()">DELETE ALL</button>
+    </div>
+
+
+
+
+
+
+    <script src="index.js"></script>    
+</body>
+</html>
